@@ -19,16 +19,15 @@ Limitless Makers Mezun Ağı, genç girişimciler için 4 haftalık yoğun bir g
 
 | Renk             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| örnek renk | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| örnek renk | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| örnek renk | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| örnek renk | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 | 
+| 1. renk | ![#EDA339](https://via.placeholder.com/10/EDA339?text=+) #EDA339 |
+| 2. renk | ![#DE8270](https://via.placeholder.com/10/DE8270?text=+) #DE8270 |
+| 3. renk | ![#CF60A6](https://via.placeholder.com/10/CF60A6?text=+) #CF60A6 |
+| 4. renk | ![#B74EC1](https://via.placeholder.com/10/B74EC1?text=+) #B74EC1 | 
+| 5. renk | ![#8848C6](https://via.placeholder.com/10/8848C6?text=+) #8848C6 | 
 
 ## Yol haritası
 
-- Ek tarayıcı desteği
-
-- Daha fazla entegrasyon ekleme
+- Belirlenecek...
 
   
 ## Bilgisayarınızda Çalıştırın
