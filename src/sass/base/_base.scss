@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+img, svg, picture, video {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+input, textarea, select {
+    outline: none;
+    border: none;
+}

@@ -1,0 +1,55 @@
+/* MEDIA QUERY MANAGER
+
+1600px: md-desktop = 100em
+1440px: desktop = 81.25em
+1050px: tablet = 65.625em
+750px: portrait tablet = 46.875em
+650px: mobile = 40.625em
+300px: sm-mobile = 18.75em
+*/
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+img, svg, picture, video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input, textarea, select {
+  outline: none;
+  border: none;
+}
