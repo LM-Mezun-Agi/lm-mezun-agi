@@ -9,9 +9,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    Test
+    <header class="header">
+        <h1 class="header__heading">
+            <a href="#" class="header__heading-link">
+                <img src="assets/images/logo.png" alt="LM Mezun Ağı Logo">
+                <span class="header__heading-text">LM Mezun Ağı</span>
+            </a>
+        </h1>
+        
+        <nav class="header__navigation">
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item"><a href="#" class="header__navigation-link" aria-current="page">Anasayfa</a></li>
+                <li class="header__navigation-item"><a href="#" class="header__navigation-link">Topluluklar</a></li>
+                <li class="header__navigation-item"><a href="#" class="header__navigation-link">Yarışmalar</a></li>
+                <li class="header__navigation-item"><a href="#" class="header__navigation-link">Harita</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__search">
+            <svg class="header__search-icon">
+                <use xlink:href="assets/sprite.svg#icon-search"></use>
+            </svg>
+            <input type="text" class="header__search-input">
+        </div>
+
+        <section class="header__user">
+            <a href="#" class="header__user-settings">
+                <svg class="header__user-icon--settings header__user-icon">
+                    <use xlink:href="assets/sprite.svg#icon-settings"></use>
+                </svg>
+            </a>
+
+            <a href="#" class="header__user-notifications">
+                <svg class="header__user-icon--notifications header__user-icon">
+                    <use xlink:href="assets/sprite.svg#icon-notifications_none"></use>
+                </svg>
+            </a>
+
+            <a href="#" class="header__user-profile">
+                <img src="assets/images/user-profile.png" alt="User" class="header__user-profile-image">
+            </a>
+        </section>
+    </header>
+
+    <main class="main">
+        Main 
+    </main>
+
+    <footer class="footer">
+        Footer 
+    </footer>
 </body>
 </html>

@@ -23,17 +23,19 @@ $font-sizes: (
     "lg": 1.8rem,
     "xl": 2rem,
     "xxl": 2.4rem,
-    "xxxl": 3.2rem
+    "xxxl": 3rem
 );
 
-$scapings: (
+$spacings: (
     "xs": 0.4rem,
     "sm": 0.8rem,
-    "md": 1.2rem,
+    "md": 1rem,
     "lg": 1.6rem,
     "xl": 2rem,
     "xxl": 2.4rem,
-    "xxxl": 3.2rem
+    "xxxl": 3.2rem,
+    "xxxxl": 4rem,
+    "hg": 4.8rem
 );
 
 $font-weights: (
@@ -41,6 +43,10 @@ $font-weights: (
     "regular": 400,
     "medium": 500,
     "bold": 700
+);
+
+$sizes: (
+    "navbar-height": 8.4rem,
 );
 
 $breakpoints: (

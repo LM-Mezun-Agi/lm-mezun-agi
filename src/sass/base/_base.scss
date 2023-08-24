@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -10,10 +12,10 @@ html {
 
 body { 
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-size: map-get($font-sizes, "md");
     line-height: 1.5;
-    color: #333;
-    background-color: #fff;
+    color: map-get($colours, "light");
+    background-color: map-get($colours, "dark");
 }
 
 img, svg, picture, video {
@@ -22,6 +24,7 @@ img, svg, picture, video {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }

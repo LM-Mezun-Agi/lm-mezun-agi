@@ -4,6 +4,8 @@
 @use 'base/base' as *;
 @use 'base/typography' as *;
 
+@use "components/buttons" as *;
+
 @use 'layout/footer' as *;
 @use 'layout/header' as *;
 @use 'layout/forms' as *;
