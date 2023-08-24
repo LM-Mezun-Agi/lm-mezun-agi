@@ -1,6 +1,7 @@
 # Katkıda Bulunma Kuralları
 
-Bu projeye katkıda bulunurken, projenin kalitesini ve tutarlılığını sağlamak için aşağıdaki kurallara uymanız önemlidir.
+Bu projeye katkıda bulunurken, projenin kalitesini ve tutarlılığını sağlamak için aşağıdaki kurallara uymanız önemlidir. 
+Aksi taktirde commit'inizi güncellemeniz gerekir.
 
 ## Kod Stili
 
@@ -14,6 +15,10 @@ Bu projeye katkıda bulunurken, projenin kalitesini ve tutarlılığını sağla
 - JavaScript kodları için [JSDoc](https://jsdoc.app/) formatını kullanarak fonksiyonlarınızı ve değişkenlerinizi belgelendirin.
 - Python kodları için [reST](https://docutils.sourceforge.io/rst.html) formatını kullanarak fonksiyonlarınızı ve değişkenlerinizi belgelendirin.
 - API endpoint'leri ve istek/yanıt formatları için açıklamalar ekleyin, [RESTful API standartlarına](https://restfulapi.net/) uygun olun.
+
+## Commit Convention
+
+- Commit'leri atarken [ConventionalCommits](https://www.conventionalcommits.org/en/v1.0.0/) sistemini göz önünde bulundurun.
 
 ## Lisans
 
