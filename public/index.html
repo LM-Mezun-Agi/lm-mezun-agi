@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="grid-main">
     <header class="header">
         <h1 class="header__heading">
             <a href="#" class="header__heading-link">
@@ -51,17 +51,130 @@
             </a>
 
             <a href="#" class="header__user-profile">
-                <img src="assets/images/user-profile.png" alt="User" class="header__user-profile-image">
+                <img src="assets/images/user-profile.svg" alt="User" class="header__user-profile-image">
             </a>
         </section>
     </header>
 
-    <main class="main">
-        Main 
-    </main>
+    <aside class="sidebar">
+        <div class="sidebar__content">
+            <section class="sidebar__profile">
+                <figure class="sidebar__profile-image">
+                    <img src="assets/images/user-profile.svg" alt="Kullanıcı profil fotoğrafı" class="sidebar__profile-image-source">
+                    <figcaption class="sidebar__profile-image-level"><span>2</span></figcaption>
+                </figure>
+                
+                <section class="sidebar__profile-details">
+                    <p class="sidebar__profile-fullname">Meredith Grey</p>
+                    <p class="sidebar__profile-username">@meredith_grey</p>
+    
+                    <div class="sidebar__profile-followers">
+                        <svg class="sidebar__profile-followers-icon">
+                            <use xlink:href="assets/sprite.svg#icon-person"></use>
+                        </svg>
+                        <p class="sidebar__profile-followers-count">75</p>
+                    </div>
+                </section>
+            </section>
 
-    <footer class="footer">
-        Footer 
-    </footer>
+            <section class="sidebar__events">
+                <h2 class="sidebar__events-title heading-secondary">Yaklaşan Etkinlikler</h2>
+                <select name="events-month" id="events-month" class="sidebar__events-month">
+                    <option value="nisan">Nisan</option>
+                    <option value="mayis">Mayıs</option>
+                    <option value="haziran">Haziran</option>
+                    <option value="temmuz">Temmuz</option>
+                    <option value="agustos">Ağustos</option>
+                    <option value="eylul">Eylül</option>
+                    <option value="ekim">Ekim</option>
+                    <option value="ekim">Kasım</option>
+                    <option value="aralik">Aralık</option>
+                </select>
+
+                <ol class="sidebar__events-list">
+                    <li class="sidebar__events-item" data-day="5">
+                        <span>5</span>
+                        <span>İstanbul LM Buluşması</span>
+                    </li>
+
+                    <li class="sidebar__events-item" data-day="12">
+                        <span>12</span>
+                        <span>Ankara LM Buluşması</span>                    
+                    </li>
+
+                    <li class="sidebar__events-item" data-day="20">                        
+                        <span>20</span>
+                        <span>İzmir LM Buluşması</span>
+                    </li>
+
+                    <li class="sidebar__events-item" data-day="20">                        
+                        <span>24</span>
+                        <span>Rize LM Buluşması</span>
+                    </li>
+
+                    <li class="sidebar__events-item" data-day="20">                        
+                        <span>29</span>
+                        <span>Mardin LM Buluşması</span>
+                    </li>
+                </ol>
+            </section>
+        </div>
+        <footer class="sidebar__footer footer">
+            <ul class="footer__socials">
+                <li class="footer__socials-item">
+                    <a href="#" class="footer__socials-link">
+                        <svg class="footer__socials-icon">
+                            <use xlink:href="assets/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a href="#" class="footer__socials-link">
+                        <svg class="footer__socials-icon">
+                            <use xlink:href="assets/sprite.svg#icon-google"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a href="#" class="footer__socials-link">
+                        <svg class="footer__socials-icon">
+                            <use xlink:href="assets/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a href="#" class="footer__socials-link">
+                        <svg class="footer__socials-icon">
+                            <use xlink:href="assets/sprite.svg#icon-discord"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a href="#" class="footer__socials-link">
+                        <svg class="footer__socials-icon">
+                            <use xlink:href="assets/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__links">
+                <li class="footer__links-item">
+                    <a href="#" class="footer__links-link">gizlilik politikası</a>
+                </li>
+                <span>&</span>
+                <li class="footer__links-item">
+                    <a href="#" class="footer__links-link">kullanım sözleşmesi</a>
+                </li>
+            </ul>
+            <p class="footer__copyright">
+                all rights reserved &copy; 2023 <br>
+                powered by <a href="https://limitlessmakers.gsb.gov.tr">Limitless Makers</a>
+            </p>
+        </footer>
+    </aside>
+
+    <main class="main">
+        Content
+    </main>
 </body>
 </html>

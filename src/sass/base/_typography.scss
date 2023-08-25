@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as *;
+
+.heading-secondary {
+    font-weight: 600;
+    font-size: map-get($font-sizes, "xxxl");
+    letter-spacing: 0.08rem;
+}

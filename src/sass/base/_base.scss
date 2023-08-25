@@ -16,6 +16,7 @@ body {
     line-height: 1.5;
     color: map-get($colours, "light");
     background-color: map-get($colours, "dark");
+    min-height: 100vh;
 }
 
 img, svg, picture, video {
@@ -46,4 +47,26 @@ input, textarea, select, button {
 input, textarea, select {
     outline: none;
     border: none;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(map-get($colours, "light"), .1); 
+    border-radius: 100rem;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(map-get($colours, "light"), .5); 
+    transition: all .17s ease;
+    border-radius: 100rem;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(map-get($colours, "light"), .4); 
+
 }

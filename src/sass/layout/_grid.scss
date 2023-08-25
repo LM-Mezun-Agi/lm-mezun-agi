@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as *;
+
+.grid-main {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: (map-get($sizes, "navbar-height")) 1fr;
+    grid-column-gap: 1rem;
+}
