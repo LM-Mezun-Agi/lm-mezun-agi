@@ -34,7 +34,7 @@ ul, ol {
     list-style: none;
 }
 
-button {
+button, select {
     cursor: pointer;
 }
 
@@ -68,5 +68,10 @@ input, textarea, select {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(map-get($colours, "light"), .4); 
+}
 
+.main {
+    padding: 5rem 3.9rem 6.6rem;
+    min-height: calc(100vh - map-get($sizes, "navbar-height"));
+    grid-column: 4 / -1;
 }

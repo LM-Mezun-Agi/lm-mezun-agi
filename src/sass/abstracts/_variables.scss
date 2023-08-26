@@ -16,6 +16,16 @@ $colours: (
     "grey-600": #1D1D1D
 );
 
+$gradients: (
+    "the-lakes": linear-gradient(#1EC0C0, #118CC1 40%, #143981),
+    "delicate": linear-gradient(#F1AB2C, #C850C0 60%, #7F47C7),
+    "debut": linear-gradient(#D9C514, #9ABD0E 40%, #6BB71E),
+    "getaway-car": linear-gradient(#80C73A, #3377DE),
+    "wildest-dreams": linear-gradient(#D7B026, #D62911),
+    "speak-now": linear-gradient(#852FC9, #0D9DBD),
+    "red": linear-gradient(#EA8916, #B64514 60%, #8D0F0F)
+);
+
 $font-sizes: (
     "xs": 1.2rem,
     "sm": 1.4rem,

@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as *;
+
+.onboarding {
+    background-color: map-get($colours, "grey-400");
+    text-align: center;
+    padding: 3.6rem 17.5rem 1rem;
+    border-radius: 2rem;
+
+    &__title {
+        font-weight: 700;
+        font-size: 3.6rem;
+        letter-spacing: 0.16rem;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: 0.16rem;
+        margin-top: 1.3rem;
+    }
+
+    &__icon {
+        color: #9ABD0E;
+        font-size: 3.8rem;
+        margin-top: 1.3rem;
+    }
+}

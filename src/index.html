@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 <body class="grid-main">
     <header class="header">
@@ -173,8 +175,83 @@
         </footer>
     </aside>
 
-    <main class="main">
-        Content
+    <main class="main flex-main">
+        <section class="onboarding">
+            <p class="onboarding__title">Mezun ağımıza sen de katkı sağlamak ister misin?</p>
+            <p class="onboarding__description">Bizimle iletişime geçebilirsin:</p>
+            <svg class="onboarding__icon">
+                <use xlink:href="assets/sprite.svg#icon-whatsapp-filled"></use>
+            </svg>
+        </section>
+
+        <section class="recommended-profiles">
+            <div class="recommended-profiles__top">
+                <h2 class="heading-secondary">Bağlantı kurabileceğin profiller</h2>
+                <div class="recommended-profiles__filters">
+                    <select name="hobbies" id="hobbies" class="recommended-profiles__filters-item recommended-profiles__filters-item--select" data-gradient="the-lakes">
+                        <option value="all">İlgi Alanları</option>
+                        <option value="yazilim">Yazılım</option>
+                        <option value="muzik">Müzik</option>
+                        <option value="edebiyat">Edebiyat</option>
+                        <option value="spor">Spor</option>
+                    </select>
+                    <button name="location" id="location" class="recommended-profiles__filters-item" data-gradient="wildest-dreams">Konum</button>
+
+                    <button name="term" id="term" class="recommended-profiles__filters-item recommended-profiles__filters-item--active" data-gradient="getaway-car">Dönem</button>
+                </div>
+            </div>
+
+            <div class="recommended-profiles__bottom">
+                <div class="profile-card">
+                    <figure class="profile-card__image">
+                        <img src="assets/images/user-profile.svg" alt="Kullanıcı profil fotoğrafı" class="profile-card__image-source">
+                        <figcaption class="profile-card__image-level"><span>2</span></figcaption>
+                    </figure>
+
+                    <section class="profile-card__details">
+                        <p class="profile-card__fullname">Meredith Grey</p>
+                        <p class="profile-card__username">@meredith_grey</p>
+                    </section>
+
+                    <ul class="profile-card__info-list">
+                        <li class="profile-card__info-item">
+                            <svg class="profile-card__info-icon">
+                                <use xlink:href="assets/sprite.svg#icon-location_on"></use>
+                            </svg>
+                            <p class="profile-card__info-text">Londra (Yozgat)</p>
+                        </li>
+
+                        <li class="profile-card__info-item">
+                            <svg class="profile-card__info-icon">
+                                <use xlink:href="assets/sprite.svg#icon-school"></use>
+                            </svg>
+                            <p class="profile-card__info-text">Meow High School</p>
+                        </li>
+
+                        <li class="profile-card__info-item">
+                            <svg class="profile-card__info-icon">
+                                <use xlink:href="assets/sprite.svg#icon-school"></use>
+                            </svg>
+                            <p class="profile-card__info-text">MW University</p>
+                        </li>
+                    </ul>
+
+                    <ul class="profile-card__section-counter">
+                        <li class="profile-card__section-counter-item"><span></span></li>
+                        <li class="profile-card__section-counter-item"><span></span></li>
+                        <li class="profile-card__section-counter-item"><span></span></li>
+                    </ul>
+
+                    <div class="profile-card__invitation-container">
+                        <button class="profile-card__send-invitation">
+                            <svg class="profile-card__send-invitation-icon">
+                                <use xlink:href="assets/sprite.svg#icon-add"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

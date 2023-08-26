@@ -1,0 +1,165 @@
+@use "sass:string";
+@use "../abstracts/variables" as *;
+
+.recommended-profiles {
+    position: relative;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__filters {
+        display: flex;
+        gap: .4rem;
+    }
+
+    &__filters-item {
+        outline: none;
+
+        border-radius: 1.8rem;
+        border: 0.2rem solid transparent;
+        padding: .6rem 1.5rem;
+        font-size: 1.3rem;
+        transition: all .2s ease;
+
+        &[data-gradient="the-lakes"] {
+            background: linear-gradient(map-get($colours, "dark"), map-get($colours, "dark"))
+            padding-box,
+            map-get($gradients, "the-lakes") border-box;
+        }
+        
+        &[data-gradient="wildest-dreams"] {
+            background: linear-gradient(map-get($colours, "dark"), map-get($colours, "dark"))
+            padding-box,
+            map-get($gradients, "wildest-dreams") border-box;
+        }
+
+        &[data-gradient="getaway-car"] {
+            background: linear-gradient(map-get($colours, "dark"), map-get($colours, "dark"))
+            padding-box,
+            map-get($gradients, "getaway-car") border-box;
+        }
+
+        &--select {
+            & > * {
+                background-color: map-get($colours, "dark");
+                width: 150%;
+                color: rgba(map-get($colours, "light"), .5);
+            }
+        }
+
+        &:hover {
+            opacity: .8;
+        }
+
+        &--active {
+            &[data-gradient="the-lakes"] {
+                background: map-get($gradients, "the-lakes") padding-box, map-get($gradients, "the-lakes") border-box !important;            
+            }
+
+            &[data-gradient="wildest-dreams"] {
+                background: map-get($gradients, "wildest-dreams") padding-box, map-get($gradients, "wildest-dreams") border-box !important;            
+            }
+
+            &[data-gradient="getaway-car"] {
+                background: map-get($gradients, "getaway-car") padding-box, map-get($gradients, "getaway-car") border-box !important;            
+            }
+        }
+    }
+}
+
+.profile-card {
+    background-color: map-get($colours, "grey-400");
+    width: 24.6rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    &__image {
+        position: relative;
+
+        &-source {
+            width: 7.6rem;
+            height: 7.6rem;
+            border-radius: 50%;
+        }
+
+        &-level {
+            position: absolute;
+            left: 5.2rem;
+            top: 5.2rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            background-color: map-get($colours, "light");
+            color: map-get($colours, "tertiary");
+            border-radius: 50%;
+            font-size: 1.6rem;
+            text-align: center; 
+
+            & span {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__fullname {
+        font-weight: 600;
+        font-size: 1.6rem;
+        letter-spacing: 0.08rem;
+    }
+
+    &__username {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 0.08rem;
+        opacity: .5;
+    }
+
+    &__info-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-item {
+        display: flex;
+    }
+
+    &__info-icon {
+        font-size: 1.3rem;
+    }
+
+    &__info-text {
+        font-size: 1rem;
+    }
+
+    &__invitation-container {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    &__send-invitation {
+        position: relative;
+        background: map-get($gradients, "delicate");
+        outline: none;
+        border: none;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: .5rem;
+
+        &-icon {
+            font-size: 2rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
